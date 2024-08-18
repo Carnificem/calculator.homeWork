@@ -20,12 +20,16 @@ public class CalculatorTest {
 
     @Test
     void calculatorMultiplay() {
-        assertEquals(25, calculatorService.calculatorMultiplay(5, 5));
+        assertEquals(25, calculatorService.calculatorMultiply(5, 5));
     }
 
     @Test
-    void calculatorDivide() throws Exception {
+    void calculatorDivide() throws IllegalArgumentException {
         assertEquals(1, calculatorService.calculatorDivide(5, 3));
+    }
+    @Test
+    void calculatorDivisionByZero() throws IllegalArgumentException {
+        assertEquals(1, calculatorService.calculatorDivide(5, 0));
     }
 }
 

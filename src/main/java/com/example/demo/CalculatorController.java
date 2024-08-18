@@ -33,9 +33,9 @@ public class CalculatorController {
         return a + "-" + b + "=" + calculatorService.calculatorMinus(a, b);
     }
 
-    @GetMapping(path = "/multiplay")
-    public String calculatorMultiplay(@RequestParam("num1") int a, @RequestParam("num2") int b) {
-        return a + "*" + b + "=" + calculatorService.calculatorMultiplay(a, b);
+    @GetMapping(path = "/multiply")
+    public String calculatorMultiply(@RequestParam("num1") int a, @RequestParam("num2") int b) {
+        return a + "*" + b + "=" + calculatorService.calculatorMultiply(a, b);
     }
 
     @GetMapping(path = "/divide")
