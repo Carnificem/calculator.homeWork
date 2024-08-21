@@ -86,9 +86,7 @@ public class ParameterizedTestByCalculator {
     }
 
 
-    //static Stream<Integer> provideByNull(){
-    //  return Stream.of(0);
-    //}
+
     @ParameterizedTest
     @CsvSource({"0"})
     void testIllegalArgumentException(int input) {

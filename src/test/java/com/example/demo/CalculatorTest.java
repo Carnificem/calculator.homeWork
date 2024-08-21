@@ -32,7 +32,6 @@ public class CalculatorTest {
         assertEquals(1, calculatorService.calculatorDivide(5, 3));
         assertEquals(10, calculatorService.calculatorDivide(50, 5));
     }
-
     @Test
     void calculatorDivisionByZero() throws IllegalArgumentException {
         assertEquals(1, calculatorService.calculatorDivide(5, 0));
